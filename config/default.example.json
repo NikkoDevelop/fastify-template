@@ -1,6 +1,6 @@
 {
   "name": "Fastify Template",
-  "port": 8080,
+  "port": "8080",
   "settings": {
     "cookieSecret": "secret string"
   }

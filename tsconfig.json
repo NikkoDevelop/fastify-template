@@ -1,0 +1,34 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+},
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2022",
+    "lib": [
+      "ES2021"
+    ],
+    "moduleResolution": "Node",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@Service/*": ["src/services/*"],
+    }
+  },
+  "include": [
+    "./src",
+  ],
+  "exclude": ["**/__mocks__/*"]
+}
